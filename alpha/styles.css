@@ -1,0 +1,95 @@
+* {
+    border: none;
+    box-sizing: border-box;
+}
+img {
+    height: auto;
+    width: 100%;
+  }
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: geographedit;
+}
+
+main{
+    padding: 100px;
+    display: block;
+}
+
+main .container{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col_1{
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-style: bold;
+    font-size: 50px;
+    margin: 0;
+}
+
+h2{
+    display: inline-block;
+    margin: 0;
+}
+
+#intro .col_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#information .col_1{
+    margin-bottom: 35px;
+}
+
+#information h2 span, #howItWorks h2 span, h1 span{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+#infoBlock{
+    align-items: flex-start;
+}
+
+#howItWorks .col_1{
+    margin-bottom: 35px;
+}
+
+#howItWorks .col_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    .flex-container{
+        flex-direction: column;
+    }
+}
