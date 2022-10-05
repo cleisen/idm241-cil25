@@ -19,11 +19,12 @@ body{
 main{
     padding: 100px;
     display: block;
+    border: 15px solid yellow
 }
 
 main .container{
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-top: 95px;
 }
 
 .container{
@@ -45,8 +46,8 @@ main .container{
 }
 
 h1{
-    font-style: bold;
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 60px;
     margin: 0;
 }
 
@@ -91,5 +92,13 @@ h2{
 @media screen and (max-width: 1200px) {
     .flex-container{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 220%;
+        justify-self: left;
+        margin: 0 40px 0 40px;
     }
 }
