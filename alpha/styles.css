@@ -2,6 +2,14 @@
     border: none;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: geographedit;
+    src: url(geograph/geographeditwebbold.ttf);
+    src: url(geograph/geographeditwebmedium.ttf);
+    src: url(geograph/geographeditwebregular.ttf);
+  }
+
 img {
     height: auto;
     width: 100%;
@@ -54,6 +62,10 @@ h1{
 h2{
     display: inline-block;
     margin: 0;
+}
+
+a{
+    color: yellow;
 }
 
 #intro .col_1{
