@@ -27,7 +27,7 @@ body{
 main{
     padding: 100px;
     display: block;
-    border: 15px solid yellow
+    border: 15px solid #FAD749;
 }
 
 main .container{
@@ -57,15 +57,21 @@ h1{
     font-weight: 600;
     font-size: 60px;
     margin: 0;
+    letter-spacing: 2px;
 }
 
 h2{
     display: inline-block;
     margin: 0;
+    font-weight: 500;
+}
+
+h3{
+    font-weight: 400;
 }
 
 a{
-    color: yellow;
+    color: #FAD749;
 }
 
 #intro .col_1{
@@ -80,11 +86,17 @@ a{
 
 #information h2 span, #howItWorks h2 span, h1 span{
     text-decoration: underline;
-    text-decoration-color: yellow;
+    text-decoration-color: #FAD749;
 }
 
 #infoBlock{
     align-items: flex-start;
+}
+
+.col_1_3{
+    width: 25%;
+    height: auto;
+    padding: 20px;
 }
 
 #howItWorks .col_1{
@@ -104,6 +116,10 @@ a{
 @media screen and (max-width: 1200px) {
     .flex-container{
         flex-direction: column;
+    }
+    .col_1_3{
+        width: 100%;
+        height: auto;
     }
 }
 
