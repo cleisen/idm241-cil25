@@ -1,0 +1,35 @@
+* {
+    border: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: geographedit;
+    src: url(geograph/geographeditwebbold.ttf);
+    src: url(geograph/geographeditwebmedium.ttf);
+    src: url(geograph/geographeditwebregular.ttf);
+  }
+
+img {
+    height: auto;
+    width: 100%;
+  }
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: geographedit;
+}
+
+main{
+    padding: 100px;
+    display: block;
+    border: 15px solid #FAD749;
+}
+.col_1{
+width: 25%;
+height: auto;
+}
