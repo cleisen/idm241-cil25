@@ -29,34 +29,22 @@ main{
     display: block;
     border: 15px solid #FAD749;
 }
-/* .col_1{
-width: 25%;
-height: auto;
-} */
 
 .outer {
   height: 458px;
   width: 343px;
   overflow: hidden;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 .inner {
-  background-color: black;
-  background-position: center;
-  background-size: cover;
   height: 458px;
   width: 343px;
   transition: all .5s;
 }
 
 .outer:hover .inner, .outer:focus .inner {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .outer:hover .inner:before, .outer:focus .inner:before {
@@ -65,4 +53,10 @@ height: auto;
 
 .outer:hover span, .outer:focus span {
   display: block;
+}
+
+.outer:hover{
+  box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.5);
+  transition: all .6s;
+  border: solid white 1px;
 }
