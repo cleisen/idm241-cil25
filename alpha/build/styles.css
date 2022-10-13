@@ -27,7 +27,37 @@ body{
 main{
     padding: 100px;
     display: block;
-    border: 15px solid #FAD749;
+    /* border: 15px solid #FAD749; */
+  }
+  
+.center{
+  margin: auto;
+  width: 80%;
+}
+
+.header{
+  text-align: center;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.title{
+  font-weight: 600;
+  margin-top: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+
+hr{
+  min-width: 3px;
+  height: 1px;
+  border-top: 2px solid #FAD749;
+  margin: 20px 80px 40px 80px;
+}
+
+.microinteraction{
+  display: flex;
+  justify-content: center;
 }
 
 .outer {
@@ -59,4 +89,60 @@ main{
   box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.5);
   transition: all .6s;
   border: solid white 1px;
+}
+
+#infoBlock{
+  align-items: flex-start;
+}
+
+.col_1_3{
+  width: 25%;
+  height: auto;
+  padding: 20px;
+}
+
+#howItWorks{
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+li{
+  font-weight: 400;
+}
+
+.flex__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1040px) {
+  .outer, .inner{
+    width: 300px;
+    height: auto;
+  }
+  .flex-container{
+    flex-direction: column;
+}
+.col_1_3{
+    width: 100%;
+    height: auto;
+}
+}
+@media screen and (max-width: 600px) {
+  .center{
+    width: 90%;
+  }
+  main{
+    padding: 50px;
+  }
 }
