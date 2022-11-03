@@ -1,0 +1,200 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    transition: all .5s ease;
+}
+
+@font-face {
+    font-family: geographedit;
+    src: url(geograph/geographeditwebbold.ttf);
+    src: url(geograph/geographeditwebmedium.ttf);
+    src: url(geograph/geographeditwebregular.ttf);
+  }
+
+img {
+    height: auto;
+    width: 100%;
+  }
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: block;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: geographedit;
+}
+
+main{
+    padding: 100px;
+    display: block;
+    /* border: 15px solid #FAD749; */
+  }
+  
+.center{
+  margin: auto;
+  width: 80%;
+}
+
+.header{
+  text-align: center;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.5);
+}
+
+.title{
+  font-weight: 600;
+  margin-top: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+
+hr{
+  min-width: 3px;
+  height: 2px;
+  border-top: 2px solid #FAD749;
+  margin: 20px 80px 40px 80px;
+}
+
+.microinteraction{
+  display: flex;
+  justify-content: center;
+}
+
+.info_butt{
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+}
+
+.icon-info-sign{
+    color: white;
+    width: 20px;
+    height: 20px;
+ }
+ 
+ /* .extra-info {
+   color: white;
+   display: none;
+   line-height: 30px;
+   font-size: 12px;
+     position: absolute;
+   top: 0;
+   left: 50px;
+ } */
+ 
+ /* .info:hover .extra-info {
+   display: block;
+ } */
+ 
+ .info {
+   font-size: 20px;
+   padding-left: 5px;
+   margin-top: 8px;
+   margin-left: 5px;
+   width: 20px;
+   border-radius: 15px;
+ }
+ 
+ .info:hover {
+   background-image: linear-gradient(180deg, rgb(38, 50, 35), rgb(38, 50, 35, 0.8));
+   padding: 5px;
+   width: 330px;
+   height: 445px;
+   text-align: left !important;
+ }
+
+.outer {
+  height: 458px;
+  width: 343px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.inner {
+  height: 458px;
+  width: 343px;
+  transition: all .5s;
+}
+
+.rect:hover .info_butt{
+    opacity: 100%;
+}
+
+.outer:hover .inner, .outer:focus .inner {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.outer:hover .inner:before, .outer:focus .inner:before {
+  display:block;
+}
+
+.outer:hover span, .outer:focus span {
+  display: block;
+}
+
+.outer:hover{
+  box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.5);
+  transition: all .6s;
+  border: solid white 1px;
+}
+
+#infoBlock{
+  align-items: flex-start;
+}
+
+.col_1_3{
+  width: 25%;
+  height: auto;
+  padding: 20px;
+}
+
+#howItWorks{
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+li{
+  font-weight: 400;
+}
+
+.flex__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1040px) {
+  .outer, .inner{
+    width: 300px;
+    height: auto;
+  }
+  .flex-container{
+    flex-direction: column;
+}
+.col_1_3{
+    width: 100%;
+    height: auto;
+}
+}
+@media screen and (max-width: 600px) {
+  .center{
+    width: 90%;
+  }
+  main{
+    padding: 50px;
+  }
+}
