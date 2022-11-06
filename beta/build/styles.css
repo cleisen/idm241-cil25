@@ -1,7 +1,7 @@
 * {
     border: none;
     box-sizing: border-box;
-    transition: all .5s ease;
+    transition: all .4s ease-in-out;
 }
 
 @font-face {
@@ -28,7 +28,6 @@ body{
 main{
     padding: 100px;
     display: block;
-    /* border: 15px solid #FAD749; */
   }
   
 .center{
@@ -58,6 +57,10 @@ hr{
   margin: 20px 80px 40px 80px;
 }
 
+
+
+/* INTERACTION SECTION */
+
 .microinteraction{
   display: flex;
   justify-content: center;
@@ -69,42 +72,46 @@ hr{
     opacity: 0;
 }
 
+.rect:hover .info_butt{
+  opacity: 100%;
+}
+
+.info {
+  font-size: 20px;
+  padding-left: 5px;
+  margin-top: 8px;
+  margin-left: 5px;
+  width: 20px;
+  border-radius: 15px;
+}
+
+.info:hover {
+ background-image: linear-gradient(180deg, rgb(38, 50, 35), rgb(38, 50, 35, 0.8));
+ padding: 5px;
+ width: 330px;
+ height: 445px;
+ text-align: left !important;
+}
+
 .icon-info-sign{
-    color: white;
-    width: 20px;
-    height: 20px;
- }
- 
- /* .extra-info {
-   color: white;
-   display: none;
-   line-height: 30px;
-   font-size: 12px;
-     position: absolute;
-   top: 0;
-   left: 50px;
- } */
- 
- /* .info:hover .extra-info {
-   display: block;
- } */
- 
- .info {
-   font-size: 20px;
-   padding-left: 5px;
-   margin-top: 8px;
-   margin-left: 5px;
-   width: 20px;
-   border-radius: 15px;
- }
- 
- .info:hover {
-   background-image: linear-gradient(180deg, rgb(38, 50, 35), rgb(38, 50, 35, 0.8));
-   padding: 5px;
-   width: 330px;
-   height: 445px;
-   text-align: left !important;
- }
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.extra-info {
+  color: white;
+  display: none;
+  line-height: 30px;
+  font-size: 12px;
+    position: absolute;
+  top: 0;
+  left: 50px;
+} 
+
+.info:hover .extra-info {
+  display: block;
+}
 
 .outer {
   height: 458px;
@@ -113,34 +120,34 @@ hr{
   z-index: 1;
 }
 
+.outer:hover{
+  box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.5);
+  transition: all .6s;
+  border: solid white 1px;
+}
+
 .inner {
   height: 458px;
   width: 343px;
-  transition: all .5s;
-}
-
-.rect:hover .info_butt{
-    opacity: 100%;
+  transition: all .5s ease-in-out;
 }
 
 .outer:hover .inner, .outer:focus .inner {
   transform: scale(1.05);
-  cursor: pointer;
 }
 
 .outer:hover .inner:before, .outer:focus .inner:before {
   display:block;
 }
 
-.outer:hover span, .outer:focus span {
-  display: block;
+.watch_now:hover{
+  cursor: pointer;
+  background-color: rgba(202, 202, 202, 0.796);
 }
 
-.outer:hover{
-  box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.5);
-  transition: all .6s;
-  border: solid white 1px;
-}
+
+
+/* HOW IT WORKS SECTION */
 
 #infoBlock{
   align-items: flex-start;
