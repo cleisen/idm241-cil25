@@ -1,0 +1,161 @@
+* {
+    border: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: geographedit;
+    src: url(geograph/geographeditwebbold.ttf);
+    src: url(geograph/geographeditwebmedium.ttf);
+    src: url(geograph/geographeditwebregular.ttf);
+  }
+
+img {
+    height: auto;
+    width: 100%;
+  }
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: block;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: geographedit;
+}
+
+main{
+    padding: 100px;
+    display: block;
+    /* border: 15px solid #FAD749; */
+}
+
+main .container{
+    padding-bottom: 10px;
+    padding-top: 95px;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col_1{
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header{
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.5);
+  }
+
+h2{
+    /* display: inline-block;
+    margin: 0; */
+    font-weight: 500;
+    text-align: center;
+}
+
+.title{
+    font-weight: 500;
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+}
+  
+  hr{
+    min-width: 3px;
+    height: 2px;
+    border-top: 2px solid #FAD749;
+    margin: 20px 80px 40px 80px;
+}
+
+h3{
+    font-weight: 400;
+}
+
+a{
+    color: #FAD749;
+}
+
+#intro .col_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#information .col_1{
+    margin-bottom: 35px;
+}
+
+#information h2 span, #howItWorks h2 span, h1 span{
+    text-decoration: underline;
+    text-decoration-color: #FAD749;
+}
+
+#infoBlock{
+    align-items: flex-start;
+}
+
+.col_1_3{
+    width: 25%;
+    height: auto;
+    padding: 20px;
+}
+
+#howItWorks .col_1{
+    margin-bottom: 35px;
+}
+
+#howItWorks .col_2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 80%;
+}
+
+.image{
+    width: 270px;
+    height: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    .flex-container{
+        flex-direction: column;
+    }
+    .col_1_3{
+        width: 100%;
+        height: auto;
+    }
+    #howItWorks .col_2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        font-size: 35px;
+        justify-self: left;
+        margin: 0 40px 0 40px;
+    }
+}
