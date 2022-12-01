@@ -291,6 +291,9 @@ li{
 
 /* MEDIA QUERIES */
 
+
+/* tablet */
+
 @media screen and (max-width: 1040px) {
   .outer, .inner{
     width: 300px;
@@ -307,8 +310,50 @@ li{
     width: 280px;
     height: 380px;
 }
+.tv-title{
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.words{
+  font-size: 12px;
+}
+.watch{
+  width: 123px;
+  height: 34px;
+  font-size: 12px;
+  left: 45px;
+  top: 300px;
+}
+.play{
+  width: 8px;
+  height: 13px;
+}
+.toggle, .add {
+  width: 30px;
+  height: 30px;
+  left: 220px;
+  top: 338px;
+  border-radius: 30px; 
+}
+.toggle span { 
+  top: 50%;
+  left: 55%;
+  width: 15px;
+  height: -1px;
+}
+.toggle.added span:first-child, .toggle.added.just-added:hover span:first-child {
+  transform: rotate(-135deg) translate(-2px, -2px);
+  width: 6px;
+}
+.toggle.added span:last-child, .toggle.added.just-added:hover span:last-child { 
+  transform: rotate(-45deg) translate(1px, 2px);  
+  width:16px; 
+}
 }
 
+
+/* mobile */
 
 @media screen and (max-width: 600px) {
   .center{
