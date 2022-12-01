@@ -70,6 +70,7 @@ hr{
     z-index: 2;
     position: absolute;
     opacity: 0;
+    margin-left: 4px;
 }
 
 .rect:hover .info_butt{
@@ -89,7 +90,7 @@ hr{
  background: linear-gradient(180deg, #2A3425 3.77%, rgba(13, 14, 13, 0.85) 100%);
  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
  padding: 5px;
- width: 330px;
+ width: 326px;
  height: 445px;
  text-align: left !important;
 }
@@ -105,6 +106,10 @@ hr{
   position: absolute;
 } 
 
+.yosemite{
+  margin-left: -2px;
+}
+
 .words{
   top: 0;
   left: 50px;
@@ -117,7 +122,7 @@ hr{
 
 .tv-title{
   font-size: 23px;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 15px;
   margin-bottom: 20px;
 }
@@ -153,9 +158,91 @@ hr{
   display:block;
 }
 
-.watch_now:hover{
-  background-color: rgba(202, 202, 202, 0.796);
+.play{
+  width: 15px;
+  height: 20px;
 }
+
+.watch{
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: 133px;
+  height: 44px;
+  left: 128px;
+  top: 387px;
+  filter: drop-shadow(0px 0px 4px #FAD749);
+  font-family: geographedit;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+  top: 350px;
+  left: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 12px;
+}
+
+.watch:hover{
+  background-color: #FAD749;
+  color: black;
+}
+
+/*-----------------toggle shape---------------*/
+.toggle, .add {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  left: 259px;
+  top: 389px;
+  margin: -36px 0 0 -36px;
+  border-radius: 37px;
+  transition: all 0.2s;  
+}
+
+
+/*--------------toggle icon shapes------------*/
+.toggle span { 
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 20px;
+  height: 3px;
+  margin: -1px 0 0 -10px;
+  transition: all 0.2s;
+}
+
+
+/*-----------------plus colors----------------*/
+.add { background: black; filter: drop-shadow(0px 0px 4px #FAD749);}
+  .add:hover { background: #FAD749; }
+    .add:hover span { background: black; }
+
+
+/*----------------check colors----------------*/
+.toggle.added, .toggle.added.just-added:hover { background-color: black; }
+  .toggle.added span, .toggle.added.just-added:hover span { background-color: white; }
+
+
+/*-----------------plus hover colors---------------*/
+.toggle.added:hover { background: #FAD749; }
+  .toggle.added:hover span { background: black; }
+
+
+/*---------------------plus-------------------*/
+.add span:last-child, .toggle.added.just-added:hover span:last-child { transform: rotate(90deg); }
+
+
+/*----------transform plus to check-----------*/
+.toggle.added span:first-child, .toggle.added.just-added:hover span:first-child { transform: rotate(-135deg) translate(0px, -4px); width: 10px; }
+.toggle.added span:last-child, .toggle.added.just-added:hover span:last-child { transform: rotate(-45deg) translate(2px, 1px);  width:24px; }
+
+
+
 
 
 
