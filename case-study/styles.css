@@ -1,0 +1,100 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    transition: all .4s ease-in-out;
+}
+
+@font-face {
+    font-family: geographedit;
+    src: url(geograph/geographeditwebbold.ttf);
+    src: url(geograph/geographeditwebmedium.ttf);
+    src: url(geograph/geographeditwebregular.ttf);
+  }
+
+img {
+    height: auto;
+    width: 100%;
+  }
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: block;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: geographedit;
+}
+
+main{
+    padding: 100px;
+    display: block;
+  }
+  
+.center{
+  margin: auto;
+  width: 80%;
+}
+
+.header{
+  text-align: center;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+/* HOW IT WORKS SECTION */
+
+
+.title{
+  font-weight: 600;
+  margin-top: 60px;
+  font-size: 30px;
+  text-align: left;
+}
+
+hr{
+  min-width: 3px;
+  max-width: 150px;
+  height: 2px;
+  border-top: 2px solid #FAD749;
+  margin: 20px 80px 40px 0;
+}
+
+.flex__container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/* tablet */
+
+@media screen and (max-width: 1040px) {
+  .flex-container{
+    flex-direction: column;
+}
+
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+  .center{
+    width: 90%;
+  }
+  main{
+    padding: 50px;
+  }
+}
