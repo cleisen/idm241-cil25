@@ -101,9 +101,10 @@ hr{
 
 .icon-info-sign{
   color: white;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   z-index: 4;
+  margin-top: 4px;
 }
 
 .extra-info {
@@ -112,7 +113,7 @@ hr{
 } 
 
 .yosemite{
-  margin-top: -30px;
+  margin-top: -38px;
   margin-left: -2px;
   z-index: 1;
 }
@@ -134,7 +135,6 @@ hr{
   margin-top: 15px;
   margin-bottom: 20px;
 }
-
 .info:hover .extra-info {
   display: block;
 }
@@ -169,6 +169,13 @@ hr{
 .play{
   width: 15px;
   height: 20px;
+  display: block;
+}
+
+.play-black{
+  width: 15px;
+  height: 20px;
+  display: none;
 }
 
 .watch{
@@ -189,12 +196,28 @@ hr{
   display: flex;
   justify-content: space-evenly;
   padding-top: 12px;
-  align-content: center;
+}
+
+.watch-text{
+  padding-top: 1px;
+  color: white;
 }
 
 .watch:hover{
   background-color: #FAD749;
   color: black;
+}
+
+.watch:hover .watch-text{
+  color:black
+}
+
+.watch:hover .play-black{
+  display: block;
+}
+
+.watch:hover .play{
+  display: none;
 }
 
 /*-----------------toggle shape---------------*/
@@ -324,18 +347,28 @@ li{
   width: 123px;
   height: 34px;
   font-size: 12px;
-  left: 45px;
-  top: 290px;
+  left: 50px;
+  top: 285px;
+}
+.watch-text{
+  padding-top: 0px;
+  margin-top: -3px;
 }
 .play{
   width: 8px;
-  height: 13px;
+  height: 15px;
+  margin-top: -2px;
+}
+.play-black{
+  width: 8px;
+  height: 15px;
+  margin-top: -2px;
 }
 .toggle, .add {
   width: 30px;
   height: 30px;
-  left: 220px;
-  top: 328px;
+  left: 225px;
+  top: 323px;
   border-radius: 30px; 
 }
 .toggle span { 
